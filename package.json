@@ -1,0 +1,24 @@
+{
+  "name": "dulces_backend",
+  "version": "1.0.0",
+  "description": "backend misiontic 2022 modulo 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "angular"
+  ],
+  "author": "EAM",
+  "license": "ISC",
+  "dependencies": {
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^6.7.0"
+  }
+}
