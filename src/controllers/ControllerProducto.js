@@ -40,8 +40,35 @@ const ProductosXid = async (req, res) => {
     }
 }
 
+// Actualizar producto:
+
+const ProductoEdit = async (req, res) =>{
+    try {
+        const id = req.params.id;
+        const producto = req.body;
+        await Producto.findByIdAndUpdate(id, producto);
+        res.send("Producto actualizado correctamente");
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// Eliminar:
+
+const ProductoDelete = async (req, res) =>{
+    try {
+        const id = req.params.id;
+        await Producto.findByIdAndDelete(id);
+        res.send("Producto eliminado correctamente");
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 module.exports={
     ProductoSave,
     ProductosList,
-    ProductosXid
+    ProductosXid,
+    ProductoEdit,
+    ProductoDelete
 }
