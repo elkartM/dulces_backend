@@ -1,10 +1,14 @@
 {
   "name": "dulces_backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.17.1"
+  },
   "description": "backend misiontic 2022 modulo 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
     "node",
